@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="file_type">
+        <item>.jpeg</item>
+        <item>.jpg</item>
+        <item>.png</item>
+        <item>.gif</item>
+        <item>.mov</item>
+        <item>.mp4</item>
+        <item>.avi</item>
+        <item>.mpeg</item>
+        <item>.mpg</item>
+        <item>.wmv</item>
+        <item>.mkv</item>
+        <item>.3gp</item>
+        <item>.swf</item>
+        <item>.dat</item>
+        <item>.amr</item>
+        <item>.mp3</item>
+        <item>.aac</item>
+        <item>.ogg</item>
+    </string-array>
+</resources>

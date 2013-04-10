@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/urlEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enter_url"
+                android:inputType="textUri" />
+
+            <EditText
+                android:id="@+id/searchString"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/urlEditText"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="@string/enter_search_string"
+                android:inputType="text" />
+
+            <RadioButton
+                android:id="@+id/domain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/searchString"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Search in domain"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/depth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/domain"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Enter Deapth"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/filetypes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/depth"
+                android:layout_marginTop="5dp"
+                android:onClick="onSelectFilesClicked"
+                android:ems="10"
+                android:hint="Select file Types" />
+
+            <EditText
+                android:id="@+id/filesize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/filetypes"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Enter file size"
+                android:inputType="numberDecimal" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scrollview"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <Button
+            android:id="@+id/beginButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/currentLinkTextView"
+            android:onClick="beginButtonClicked"
+            android:text="@string/begin_text" />
+	 <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            android:layout_alignParentTop="true" />
+       
+        <TextView
+            android:id="@+id/currentLinkTextView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignRight="@+id/progressBar1"
+            android:layout_below="@+id/beginButton"
+            android:layout_marginTop="14dp"
+            android:ellipsize="end"
+            android:lines="3"
+            android:maxLines="3"
+            android:text="@string/current_link"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/badLinkTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/goodLinkTextView"
+            android:layout_below="@+id/goodLinkTextView"
+            android:text="@string/processed_links_count"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/goodLinkTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/currentLinkTextView"
+            android:layout_marginTop="10dp"
+            android:text="@string/links_count"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+       
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/imageCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout2"
+        android:layout_below="@+id/relativeLayout2"
+        android:text="@string/image_count"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

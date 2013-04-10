@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyAndroidSpider</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="links_count">Links count :</string>
+    <string name="good_links">Good links count: </string>
+    <string name="processed_links_count">Processed links count: </string>
+    <string name="no_network">No Network</string>
+    <string name="error_count">Error links count: </string>
+    <string name="begin_text">Begin</string>
+    <string name="cancle_text">Cancle </string>
+    <string name="enter_url">Enetr URL</string>
+    <string name="url_check_title">Enter correct URL</string>
+    <string name="url_check_body">Enter correct URL Example: http://www.google.com/</string>
+    <string name="current_link">Current link:</string>
+    <string name="clear_cache_menu">Clear Caches</string>
+    <string name="clear_cache_complete_toast">Caches have been cleared</string>
+    <string name="imageview_description">Image Thumbnail</string>
+    <string name="no_network_connection_toast">No network connection found</string>
+    <string name="search_in_domain_yes">Yes</string>
+    <string name="enter_search_string">Enter search string</string>
+    <string name="search_in_domain">Search in domain</string>
+    <string name="search_in_domain_no">No</string>
+    <string name="set_depth">Set deapth level</string>
+    <string name="select_file_types">Select file types</string>
+    <string name="select_file_size">Select file size</string>
+    <string name="empty_queue">Either Queue is empty or its size limit reached</string>
+    <string name="image_count">Images dowloaded:</string>
+    
+    <string name="app_tools">Tools</string>
+    <string name="app_refresh">Refresh</string>
+    <string name="action">Action</string>
+    <string name="app_send">Send</string>
+    <string name="cd_home">Home, go to startpage</string>
+    <string name="app_title">Crawler</string>
+
+</resources>
